@@ -21,7 +21,7 @@
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
+      <li><a href="/" aria-label="Home Page">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
@@ -31,7 +31,8 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <!-- Hide map from the a11y tree as its content available in the restaurant list-->
+    <section id="map-container" aria-hidden="true">
       <div id="map"></div>
     </section>
     <!-- End map -->
@@ -41,7 +42,7 @@
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+      <table id="restaurant-hours" aria-label="Restaurant Hours"></table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
