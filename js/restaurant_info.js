@@ -32,6 +32,24 @@ initMap = () => {
       fillBreadcrumb();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
     }
+    setTabindexMapElements();
+  });
+}
+
+/**
+* Set tabindex for the elements of the map to -1
+* to remove them from the tab order
+*/
+setTabindexMapElements = () => {
+  document.getElementById('map').tabIndex = -1;
+  let mapContainer = document.getElementById('map-container'),
+        imgsInMap = mapContainer.getElementsByTagName('img'),
+        linksInMap = mapContainer.getElementsByTagName('a'),
+        imgsArray = Array.from(imgsInMap),
+        linksArray = Array.from(linksInMap),
+        allMapElementsArray = [...imgsArray, ...linksArray];
+  allMapElementsArray.forEach(function(element) {
+      element.tabIndex = -1;
   });
 }
 
