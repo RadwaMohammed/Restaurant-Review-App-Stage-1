@@ -169,7 +169,7 @@ nav h1 a {
   height: auto;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 1.167rem;
@@ -335,7 +335,7 @@ nav h1 a {
   padding: 2.25em 2em 6em;
 }
 
-#reviews-container h2 {
+#reviews-container h3 {
   color: #f58500;
   font-size: 1.55rem;
   font-weight: 300;
@@ -421,7 +421,7 @@ nav h1 a {
     font-size: 1.35rem;
   }
 
-  #reviews-container h2 {
+  #reviews-container h3 {
     font-size: 1.28rem;
   }
 
@@ -491,7 +491,7 @@ nav h1 a {
     font-size: 1rem;
   }
 
-  #reviews-container h2 {
+  #reviews-container h3 {
     font-size: 1.23rem;
   }
 
