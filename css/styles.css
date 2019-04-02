@@ -12,9 +12,9 @@ p {
 }
 
 body {
-	background-color: #fbf1da;
-	margin: 0;
-	position:relative;
+  background-color: #fbf1da;
+  margin: 0;
+  position:relative;
 }
 
 ul,
@@ -26,17 +26,17 @@ li {
 
 a {
   color: #e78d1e;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: #3397db;
-	text-decoration: none;
+  color: #3397db;
+  text-decoration: none;
 }
 
 a img {
-	border: none 0px #fff;
+  border: none 0px #fff;
 }
 
 h1,
@@ -61,7 +61,7 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 
@@ -79,6 +79,8 @@ nav {
   width: calc(100% - 4em);
   height: 6em;
   background-color: #18254f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -118,10 +120,19 @@ nav h1 a {
   width: 100%;
   height: 100%;
   background-color: #18254f;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1.26em 0;
 }
 
@@ -148,7 +159,8 @@ nav h1 a {
 }
 
 .filter-options select:focus{
-  box-shadow: 0 0 8px 4px #fbf1da;
+  -webkit-box-shadow: 0 0 8px 4px #fbf1da;
+          box-shadow: 0 0 8px 4px #fbf1da;
 }
 
 
@@ -159,10 +171,18 @@ nav h1 a {
   margin: 0;
   padding: 2.25em 1.15em 4.5em;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #restaurants-list li {
@@ -174,8 +194,13 @@ nav h1 a {
   padding: 0 2.24em 1.9em;
   text-align: left;
   width: 20.3em;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #restaurants-list li:hover{
@@ -212,7 +237,9 @@ nav h1 a {
   max-width: 100%;
   width: 100%;
   height: auto;
-  order: -1;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 
@@ -385,9 +412,16 @@ nav h1 a {
   border-top: 0.063em solid #fff;
   padding: 10.55em 2em 2.1em;
   width: calc(50% - 4em);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* Reviews Part */
@@ -411,9 +445,15 @@ nav h1 a {
 #reviews-list li {
   background-color: #fff;
   border: 0.1em dashed #ead8c2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
   margin: 0 0 2.2em;
   overflow: hidden;
@@ -427,7 +467,9 @@ nav h1 a {
   width: 50%;
   color: #a63b35;
   font-size: 1.2rem;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* Review date */
@@ -435,7 +477,9 @@ nav h1 a {
   width: 50%;
   color: #18254f;
   text-align: right;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* Rating */
@@ -505,7 +549,10 @@ nav h1 a {
 @media screen and (max-width: 44em) {
   /* ========== Main page ========== */
   .filter-options {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .filter-options select {
